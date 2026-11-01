@@ -129,9 +129,33 @@ python -m src.pipeline
 
 ## Run Automated Tests
 
+
+## Testing
+
+The project includes automated unit tests and PostgreSQL integration tests using Pytest.
+
+### Run all tests
+
 ```bash
 python -m pytest tests/ -v
 ```
+
+### Unit Tests
+
+- Duplicate product removal
+- Missing title validation
+- Negative price validation
+- Empty DataFrame handling
+- Invalid product ID validation
+- Whitespace cleaning
+- Column renaming
+
+### PostgreSQL Integration Tests
+
+- Database connectivity
+- Products table existence
+- Required database column validation
+- Product record querying
 
 ## Current Implementation Results
 
